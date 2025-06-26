@@ -1,0 +1,120 @@
+<!-- course.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datascience learning - Course Details Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom Neon Shadows for a gaming theme */
+        .shadow-neon-blue {
+            box-shadow: 0 0 10px rgba(0, 150, 255, 0.7), 0 0 20px rgba(0, 150, 255, 0.5), 0 0 30px rgba(0, 150, 255, 0.3);
+        }
+        .shadow-neon-blue-lg {
+            box-shadow: 0 0 15px rgba(0, 150, 255, 0.8), 0 0 30px rgba(0, 150, 255, 0.6), 0 0 45px rgba(0, 150, 255, 0.4);
+        }
+        .shadow-neon-green {
+            box-shadow: 0 0 10px rgba(0, 255, 150, 0.7), 0 0 20px rgba(0, 255, 150, 0.5), 0 0 30px rgba(0, 255, 150, 0.3);
+        }
+        .shadow-neon-green-lg {
+            box-shadow: 0 0 15px rgba(0, 255, 150, 0.8), 0 0 30px rgba(0, 255, 150, 0.6), 0 0 45px rgba(0, 255, 150, 0.4);
+        }
+        .shadow-neon-red {
+            box-shadow: 0 0 10px rgba(255, 50, 50, 0.7), 0 0 20px rgba(255, 50, 50, 0.5), 0 0 30px rgba(255, 50, 50, 0.3);
+        }
+        .shadow-neon-red-lg {
+            box-shadow: 0 0 15px rgba(255, 50, 50, 0.8), 0 0 30px rgba(255, 50, 50, 0.6), 0 0 45px rgba(255, 50, 50, 0.4);
+        }
+        .shadow-neon-yellow {
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.3);
+        }
+        .shadow-neon-yellow-lg {
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.8), 0 0 30px rgba(255, 255, 0, 0.6), 0 0 45px rgba(255, 255, 0, 0.4);
+        }
+        .shadow-neon-purple {
+            box-shadow: 0 0 10px rgba(200, 0, 255, 0.7), 0 0 20px rgba(200, 0, 255, 0.5), 0 0 30px rgba(200, 0, 255, 0.3);
+        }
+        .shadow-neon-purple-lg {
+            box-shadow: 0 0 15px rgba(200, 0, 255, 0.8), 0 0 30px rgba(200, 0, 255, 0.6), 0 0 45px rgba(200, 0, 255, 0.4);
+        }
+
+        .chunky-button {
+            border: 3px solid;
+            transition: all 0.2s ease-in-out;
+        }
+        .chunky-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        .chunky-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between items-center py-10 px-4 bg-gradient-to-br from-green-900 to-teal-900 text-gray-100">
+    <!-- Header/Navigation -->
+    <header class="w-full max-w-4xl bg-gray-800 p-6 rounded-xl border-2 border-indigo-600 shadow-neon-blue-lg flex justify-between items-center mb-8">
+        <h1 class="text-4xl font-extrabold text-indigo-500 tracking-tight">100xlearning</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-lg font-bold text-indigo-400 hover:text-indigo-200 transition duration-300">Home</a></li>
+                <li><a href="course.html" class="text-lg font-bold text-indigo-400 hover:text-indigo-200 transition duration-300">Courses</a></li>
+                <li><a href="about.html" class="text-lg font-bold text-indigo-400 hover:text-indigo-200 transition duration-300">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content - Course Details -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center w-full max-w-4xl">
+        <div class="bg-gray-800 p-10 rounded-xl border-2 border-green-600 shadow-neon-green-lg transform hover:scale-105 transition duration-500">
+            <h2 class="text-4xl font-extrabold text-white mb-6 leading-tight">Datascience learning</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Embark on a journey into the world of Data Science and Machine Learning. Our programs are designed to equip you with the analytical skills and practical knowledge needed to transform data into insights.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-10">
+                <div>
+                    <h3 class="text-2xl font-bold text-green-500 mb-4">Featured Courses:</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Introduction to Data Science</li>
+                        <li>Machine Learning Fundamentals</li>
+                        <li>Deep Learning with TensorFlow</li>
+                        <li>Data Visualization with Python</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-green-500 mb-4">Skills You'll Acquire:</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li><span class="font-semibold text-white">Programming Languages:</span> Python, SQL, R</li>
+                        <li><span class="font-semibold text-white">Key Libraries/Tools:</span> Pandas, NumPy, Scikit-learn, Tableau, Jupyter Notebook</li>
+                        <li>Data Collection and Cleaning</li>
+                        <li>Statistical Analysis and Modeling</li>
+                        <li>Machine Learning Algorithm Implementation</li>
+                        <li>Effective Data Storytelling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="register.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-neon-green-lg transition duration-300 chunky-button border-green-800">
+                    Enroll Now!
+                </a>
+                <a href="index.html" class="inline-block bg-gray-700 border-2 border-green-600 text-green-400 hover:bg-gray-600 hover:text-green-200 font-bold py-3 px-8 rounded-full shadow-neon-green-lg transition duration-300 chunky-button">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-4xl text-center text-gray-500 text-sm mt-8 p-4">
+        &copy; 2024 100xlearning. All rights reserved.
+    </footer>
+</body>
+</html>
